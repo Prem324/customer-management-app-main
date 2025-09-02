@@ -1,0 +1,16 @@
+{
+  "name": "customer-management-app",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "react": "^19.1.1"
+  }
+}
